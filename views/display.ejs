@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="aqua">
+    <a href="/">Home</a>
+    <a href="insert">insert</a>
+    <a href="display">Display</a>
+    <hr size="7" color="red">
+
+    <h1 style="text-align: center;">Student Data Display</h1>
+    <table bgcolor="yellow" width="500" align="center">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>City
+            <th>Photo</th>
+            </th>
+        </tr>
+
+        <h2 style="align-items: center;">
+            <% stuData.forEach((key)=>{
+
+                %>
+                <tr>
+                    <td>
+                        <%=key.rollno%>
+                    </td>
+                    <td>
+                        <%=key.name%>
+                    </td>
+                    <td>
+                        <%=key.city%>
+                    </td>
+                    <td><img src="images/<%=key.photo%>" width="60px" ></td>
+                </tr>
+                <%})%>
+
+        </h2>
+    </table>
+
+
+</body>
+
+</html>
